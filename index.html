@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Handpicked</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ======= TOP NAVBAR ======= -->
+  <header class="top-nav">
+    <div class="nav-logo">
+      <!-- Replace with your logo -->
+      <span class="logo-text">your<span class="logo-accent">brand</span></span>
+    </div>
+    <div class="nav-search">
+      <select class="search-category"><option>All</option></select>
+      <input type="text" placeholder="Search Amazon" class="search-input" />
+      <button class="search-btn" aria-label="Search">&#128269;</button>
+    </div>
+    <div class="nav-actions">
+      <div class="nav-action">
+        <span class="nav-action-top">Hello, User</span>
+        <span class="nav-action-bot">Account &amp; Lists &#9660;</span>
+      </div>
+      <div class="nav-action">
+        <span class="nav-action-top">Returns</span>
+        <span class="nav-action-bot">&amp; Orders</span>
+      </div>
+      <div class="nav-action cart-btn">
+        <span class="cart-count">0</span>
+        <span class="nav-action-bot">Cart</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ======= CATEGORY NAV BAR ======= -->
+  <nav class="category-nav">
+    <span class="all-btn">&#9776; All</span>
+    <span>Same-Day Delivery</span>
+    <span>Amazon Haul</span>
+    <span>Medical Care</span>
+    <span>Amazon Basics</span>
+    <span>Best Sellers</span>
+    <span>Prime Video</span>
+    <span>Buy Again</span>
+    <span>Audible</span>
+    <span>Pet Supplies</span>
+    <span>Beauty &amp; Personal Care</span>
+    <span>Browsing History</span>
+    <span>Handmade</span>
+  </nav>
+
+  <main>
+
+    <!-- ======= HERO SECTION ======= -->
+    <section class="hero">
+      <div class="hero-left">
+        <h1>Handpicked</h1>
+        <p>We've done the research so you don't have to</p>
+      </div>
+      <div class="hero-right">
+        <img
+          src="https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/8b9a912c-016e-4a63-9b2d-4e92697c4a47._CR0%2C0%2C1500%2C750_SX750_SY375_.jpg"
+          alt="Handpicked hero" />
+      </div>
+    </section>
+
+    <!-- ======= STICKY SUB-NAV ======= -->
+    <nav class="sub-nav" id="subNav">
+      <span class="store-label">Handpicked</span>
+      <button class="share-btn" id="shareBtn" title="Share">&#11014;</button>
+      <a href="#" class="active">HOME</a>
+      <a href="#">FAQ</a>
+      <a href="#">DEALS</a>
+      <a href="#" class="has-dropdown">LAPTOPS
+        <div class="dropdown-menu">
+          <a href="#">Best Laptops</a>
+          <a href="#">Budget Laptops</a>
+          <a href="#">Gaming Laptops</a>
+          <a href="#">MacBooks</a>
+        </div>
+      </a>
+      <a href="#" class="has-dropdown">DESKTOPS
+        <div class="dropdown-menu">
+          <a href="#">Gaming PCs</a>
+          <a href="#">All-in-Ones</a>
+          <a href="#">Mini PCs</a>
+        </div>
+      </a>
+      <a href="#" class="has-dropdown">MONITORS
+        <div class="dropdown-menu">
+          <a href="#">Gaming Monitors</a>
+          <a href="#">4K Monitors</a>
+          <a href="#">Ultrawide</a>
+        </div>
+      </a>
+      <a href="#" class="has-dropdown">TELEVISIONS
+        <div class="dropdown-menu">
+          <a href="#">OLED TVs</a>
+          <a href="#">4K TVs</a>
+          <a href="#">Smart TVs</a>
+          <a href="#">Budget TVs</a>
+        </div>
+      </a>
+      <a href="#">GAMING</a>
+      <a href="#" class="active-orange">HEADPHONES</a>
+      <a href="#">PHONES</a>
+      <a href="#">WEARABLES</a>
+      <a href="#" class="active-orange">ESPRESSO MACHINES</a>
+      <a href="#" class="has-dropdown">MORE &#9660;
+        <div class="dropdown-menu">
+          <a href="#">Playsets</a>
+          <a href="#">Air Fryers</a>
+          <a href="#">Speakers</a>
+          <a href="#">Cameras</a>
+          <a href="#">Soundbars</a>
+          <a href="#">Printers</a>
+          <a href="#">Scanners</a>
+          <a href="#">Projectors</a>
+          <a href="#">Guitars</a>
+          <a href="#">Keyboards &amp; Pianos</a>
+          <a href="#">Microphones</a>
+          <a href="#">Vacuums</a>
+        </div>
+      </a>
+    </nav>
+
+    <!-- ======= CATEGORY GRID =======
+         4-column grid with explicit placement:
+         Row 1: Laptops (col 1-2) | Gaming Gear (col 3-4, rows 1-2)
+         Row 2: Monitors (col 1) | Desktops (col 2) | [Gaming Gear]
+         Row 3: Televisions (col 1-2, rows 3-4) | Featured deals (col 3-4)
+         Row 4: [Televisions] | Projectors (col 3) | Soundbars (col 4)
+         Row 5: Speakers (col 1) | Microphones (col 2) | Headphones (col 3-4, rows 5-6)
+         Row 6: Printers (col 1) | Scanners (col 2) | [Headphones]
+    ======= -->
+    <section class="category-grid">
+
+      <!-- Laptops: col 1-2, row 1 -->
+      <div class="tile tile-laptops" style="grid-column:1/3; grid-row:1;">
+        <img src="https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/1e0420ce-8a5b-4591-947a-9dce11c5804c._CR0%2C0%2C1154%2C1153_SX375_SY375_.jpg" alt="Laptops" class="tile-product-img" />
+        <h3>Laptops</h3>
+      </div>
+
+      <!-- Gaming Gear: col 3-4, rows 1-2 (tall) -->
+      <div class="tile tile-gaming tile-photo-bg" style="grid-column:3/5; grid-row:1/3;"
+           data-bg="https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/ef9067d5-bb97-468a-b63f-e820c5acc1a8._CR582%2C0%2C750%2C750_SX750_SY750_.jpg">
+        <div class="tile-text-box">
+          <h3>Gaming Gear</h3>
+          <p>Explore Handpicked gaming laptops, desktops, and more.</p>
+        </div>
+      </div>
+
+      <!-- Monitors: col 1, row 2 -->
+      <div class="tile tile-monitors" style="grid-column:1; grid-row:2;">
+        <img src="https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/d42173a9-bc8e-49da-b429-003c0899435e._CR0%2C0%2C1500%2C1500_SX375_SY375_.jpg" alt="Monitors" class="tile-product-img" />
+        <h3>Monitors</h3>
+      </div>
+
+      <!-- Desktops: col 2, row 2 -->
+      <div class="tile tile-desktops" style="grid-column:2; grid-row:2;">
+        <img src="https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/0874a4b6-41d1-46e3-93cb-f8151847e4fa._CR0%2C0%2C1500%2C750_SX750_SY375_.jpg" alt="Desktops" class="tile-product-img" />
+        <h3>Desktops</h3>
+      </div>
+
+      <!-- Televisions: col 1-2, rows 3-4 (tall) -->
+      <div class="tile tile-televisions" style="grid-column:1/3; grid-row:3/5;">
+        <img src="https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/152f39dc-c26a-4dd4-95ac-49918b179678._CR0%2C0%2C1500%2C1500_SX750_SY750_.jpg" alt="Televisions" class="tile-product-img tile-img-large" />
+        <h3>Televisions</h3>
+      </div>
+
+      <!-- Featured Deals: col 3-4, row 3 -->
+      <div class="tile tile-featured-deals" style="grid-column:3/5; grid-row:3;">
+        <h2>Featured deals</h2>
+        <a href="#" class="shop-now">Shop now &#9658;</a>
+      </div>
+
+      <!-- Projectors: col 3, row 4 -->
+      <div class="tile tile-projectors" style="grid-column:3; grid-row:4;">
+        <img src="https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/57f969de-de3e-4109-9d07-e67c70da8a44._CR0%2C0%2C1500%2C1500_SX375_SY375_.jpg" alt="Projectors" class="tile-product-img" />
+        <h3>Projectors</h3>
+      </div>
+
+      <!-- Soundbars: col 4, row 4 -->
+      <div class="tile tile-soundbars" style="grid-column:4; grid-row:4;">
+        <img src="https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/16ce44db-dae0-4afa-9620-46da0d4a54dd._CR0%2C0%2C1500%2C1500_SX375_SY375_.jpg" alt="Soundbars" class="tile-product-img" />
+        <h3>Soundbars</h3>
+      </div>
+
+      <!-- Speakers: col 1, row 5 -->
+      <div class="tile tile-speakers" style="grid-column:1; grid-row:5;">
+        <img src="https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/4a6820d8-8db8-4669-b3de-768d73ae30f2._CR0%2C0%2C1500%2C1500_SX375_SY375_.jpg" alt="Speakers" class="tile-product-img" />
+        <h3>Speakers</h3>
+      </div>
+
+      <!-- Microphones: col 2, row 5 -->
+      <div class="tile tile-microphones" style="grid-column:2; grid-row:5;">
+        <img src="https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/c39260de-6408-448a-88b6-69ba57145211._CR0%2C0%2C1500%2C1500_SX375_SY375_.jpg" alt="Microphones" class="tile-product-img" />
+        <h3>Microphones</h3>
+      </div>
+
+      <!-- Headphones: col 3-4, rows 5-6 (tall, photo bg) -->
+      <div class="tile tile-headphones tile-photo-bg" style="grid-column:3/5; grid-row:5/7;"
+           data-bg="https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/563bd910-92e6-44a1-a1c7-1dcad1700073._CR0%2C0%2C1500%2C1500_SX750_SY750_.jpg">
+        <h3 class="tile-label-bottom">Headphones</h3>
+      </div>
+
+      <!-- Printers: col 1, row 6 -->
+      <div class="tile tile-printers" style="grid-column:1; grid-row:6;">
+        <img src="https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/54d035d7-f053-47b4-9321-cf8d071a4a33._CR0%2C2%2C1078%2C1078_SX375_SY375_.PNG" alt="Printers" class="tile-product-img" />
+        <h3>Printers</h3>
+      </div>
+
+      <!-- Scanners: col 2, row 6 -->
+      <div class="tile tile-scanners" style="grid-column:2; grid-row:6;">
+        <img src="https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/4d2b3800-4485-4775-ae5f-80dc11b66136._CR0%2C0%2C1500%2C1500_SX375_SY375_.jpg" alt="Scanners" class="tile-product-img" />
+        <h3>Scanners</h3>
+      </div>
+
+    </section>
+
+    <!-- ======= CIRCLES ROW ======= -->
+    <section class="circles-row">
+      <div class="circle-item">
+        <div class="circle">
+          <img src="https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/eb1ae606-a1b8-4b8b-9779-4c1f32ca91a0._CR0%2C0%2C400%2C400_SX375_SY375_.png" alt="Guitars" />
+        </div>
+        <p>Guitars</p>
+      </div>
+      <div class="circle-item">
+        <div class="circle">
+          <img src="https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/37a0c541-d06d-43e3-a691-02cc06bd30a6._CR0%2C0%2C400%2C400_SX375_SY375_.png" alt="Keyboards & Pianos" />
+        </div>
+        <p>Keyboards &amp; Pianos</p>
+      </div>
+      <div class="circle-item">
+        <div class="circle">
+          <img src="https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/055a433f-4d40-41dc-81be-6940b0519a2d._CR0%2C0%2C400%2C400_SX375_SY375_.png" alt="Espresso Machines" />
+        </div>
+        <p>Espresso Machines</p>
+      </div>
+      <div class="circle-item">
+        <div class="circle">
+          <img src="https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/2c1f7bad-8268-48c8-b9d3-ced09ef8a720._CR0%2C0%2C400%2C400_SX375_SY375_.png" alt="Air Fryers" />
+        </div>
+        <p>Air Fryers</p>
+      </div>
+    </section>
+
+    <!-- ======= BEST SELLERS HEADER ======= -->
+    <section class="section-header">
+      <h2>Handpicked Best Sellers</h2>
+    </section>
+
+    <!-- ======= PRODUCT CARDS ROW ======= -->
+    <section class="product-row">
+
+      <!-- 1. JBL Tune 510BT -->
+      <div class="product-card">
+        <div class="product-img-wrap">
+          <img src="https://m.media-amazon.com/images/I/61kFL7ywsZS._AC_UL320_.jpg" alt="JBL Tune 510BT" />
+        </div>
+        <div class="color-swatches">
+          <span class="swatch black active"></span>
+          <span class="swatch navy"></span>
+          <span class="swatch pink"></span>
+          <span class="swatch white-sw"></span>
+        </div>
+        <p class="product-name">JBL Tune 510BT - Bluetooth headphones with up to 40 hours battery, microphone for call, foldable and comfortable, Android and iOs compatible (Black)</p>
+        <div class="rating">
+          <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+          <span class="review-count">(89.7K)</span>
+        </div>
+        <p class="bought-count">7K+ bought in past month</p>
+        <div class="price">
+          <span class="sale-badge">-20%</span>
+          <span class="current-price"><sup>$</sup>39<sup>95</sup></span>
+        </div>
+        <p class="list-price">List: <span class="strike">$49.95</span></p>
+        <p class="promo-text">90 days free of Amazon Music with purchase</p>
+        <p class="prime-delivery"><span class="prime-badge">&#10003;prime</span> Overnight</p>
+        <p class="delivery-line">FREE delivery <strong>Overnight 4 AM – 8 AM</strong></p>
+        <button class="add-to-cart">Add to cart</button>
+      </div>
+
+      <!-- 2. Breville Barista Express -->
+      <div class="product-card">
+        <div class="product-img-wrap">
+          <img src="https://m.media-amazon.com/images/I/71BvCt6eAFL._AC_UL320_.jpg" alt="Breville Barista Express" />
+        </div>
+        <p class="color-variants">+2 other colors/patterns</p>
+        <p class="product-name">Breville Barista Express Espresso Machine BES870XL, Brushed Stainless Steel</p>
+        <div class="rating">
+          <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+          <span class="review-count">(27.2K)</span>
+        </div>
+        <p class="bought-count">1K+ bought in past month</p>
+        <div class="price">
+          <span class="current-price"><sup>$</sup>687<sup>99</sup></span>
+        </div>
+        <p class="delivery-line">FREE delivery <strong>Wed, Mar 11</strong></p>
+        <p class="delivery-line">Or fastest delivery <strong>Tue, Mar 10</strong></p>
+        <button class="add-to-cart">Add to cart</button>
+      </div>
+
+      <!-- 3. Fitbit Charge 6 -->
+      <div class="product-card">
+        <div class="product-img-wrap">
+          <img src="https://m.media-amazon.com/images/I/61ZtqtvoD2L._AC_UL320_.jpg" alt="Fitbit Charge 6" />
+        </div>
+        <div class="product-tags">
+          <span class="tag">Wi-Fi</span>
+          <span class="tag">Android</span>
+        </div>
+        <p class="product-name">Fitbit Charge 6 Fitness Tracker with Google apps, Heart Rate on Exercise Equipment, 6-Months Premium Membership Included, GPS</p>
+        <div class="rating">
+          <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+          <span class="review-count">(19.4K)</span>
+        </div>
+        <p class="bought-count">6K+ bought in past month</p>
+        <div class="price">
+          <span class="sale-badge">-15%</span>
+          <span class="current-price"><sup>$</sup>136<sup>50</sup></span>
+        </div>
+        <p class="list-price">List: <span class="strike">$159.95</span></p>
+        <p class="prime-delivery"><span class="prime-badge">&#10003;prime</span> Two-Day</p>
+        <p class="delivery-line">FREE delivery <strong>Tue, Mar 10</strong></p>
+        <p class="stock-warning">Only 7 left in stock - order soon.</p>
+        <button class="add-to-cart">Add to cart</button>
+      </div>
+
+      <!-- 4. Samsung Odyssey G93SC -->
+      <div class="product-card">
+        <div class="product-img-wrap">
+          <img src="https://m.media-amazon.com/images/I/71cuZoxL0cL._AC_UL320_.jpg" alt="Samsung Odyssey G93SC" />
+        </div>
+        <p class="product-name">Samsung 49" Odyssey G93SC Series Curved Gaming Monitor, QD-OLED, 240Hz, 0.03ms, FreeSync Premium Pro, G-Sync Compatible, LS49CG934SNXZA</p>
+        <div class="rating">
+          <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+          <span class="review-count">(1.1K)</span>
+        </div>
+        <p class="bought-count">500+ bought in past month</p>
+        <div class="price">
+          <span class="current-price"><sup>$</sup>899<sup>99</sup></span>
+        </div>
+        <p class="promo-text">FREE game code for Resident Evil Requiem</p>
+        <p class="prime-delivery"><span class="prime-badge">&#10003;prime</span> Two-Day</p>
+        <p class="delivery-line">FREE delivery <strong>Tue, Mar 10</strong></p>
+        <button class="add-to-cart">Add to cart</button>
+      </div>
+
+      <!-- 5. Canon EOS R6 Mark II -->
+      <div class="product-card">
+        <div class="product-img-wrap">
+          <img src="https://m.media-amazon.com/images/I/61s5kI0U4cL._AC_UL320_.jpg" alt="Canon EOS R6 Mark II" />
+        </div>
+        <div class="product-tags">
+          <span class="tag">Mirrorless</span>
+          <span class="tag">Canon RF</span>
+        </div>
+        <p class="product-name">Canon EOS R6 Mark II Mirrorless Camera (Body Only), Full-Frame Camera, 24.2 MP, 6K RAW Video, IBIS, Subject Detection AF</p>
+        <div class="rating">
+          <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+          <span class="review-count">(581)</span>
+        </div>
+        <p class="bought-count">300+ bought in past month</p>
+        <div class="price">
+          <span class="sale-badge">-13%</span>
+          <span class="current-price"><sup>$</sup>1,999<sup>00</sup></span>
+        </div>
+        <p class="list-price">List: <span class="strike">$2,299.00</span></p>
+        <p class="prime-delivery"><span class="prime-badge">&#10003;prime</span> Tomorrow</p>
+        <p class="delivery-line">FREE delivery <strong>Tomorrow, Mar 9</strong></p>
+        <button class="add-to-cart">Add to cart</button>
+      </div>
+
+      <!-- 6. Sonos Era 100 -->
+      <div class="product-card">
+        <div class="product-img-wrap">
+          <img src="https://m.media-amazon.com/images/I/71fAeaUTNvL._AC_UL320_.jpg" alt="Sonos Era 100" />
+        </div>
+        <div class="color-swatches">
+          <span class="swatch black active"></span>
+          <span class="swatch white-sw"></span>
+        </div>
+        <p class="product-name">Sonos Era 100 - Black - Wireless, Alexa Enabled Smart Speaker</p>
+        <div class="rating">
+          <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+          <span class="review-count">(2.4K)</span>
+        </div>
+        <p class="bought-count">3K+ bought in past month</p>
+        <div class="price">
+          <span class="current-price"><sup>$</sup>219<sup>00</sup></span>
+        </div>
+        <p class="feature-tag">&#9711; Alexa Built-in</p>
+        <p class="feature-tag">&#9851; Recycled materials</p>
+        <p class="prime-delivery"><span class="prime-badge">&#10003;prime</span> Overnight</p>
+        <p class="delivery-line">FREE delivery <strong>Overnight 4 AM – 8 AM</strong></p>
+        <button class="add-to-cart">Add to cart</button>
+      </div>
+
+      <!-- 7. GoPro HERO13 Black -->
+      <div class="product-card">
+        <div class="product-img-wrap">
+          <span class="amazons-choice-badge">Amazon's Choice</span>
+          <img src="https://m.media-amazon.com/images/I/71+pD0anNuL._AC_UL320_.jpg" alt="GoPro HERO13" />
+        </div>
+        <div class="product-tags">
+          <span class="tag">5.3K</span>
+          <span class="tag">CMOS</span>
+        </div>
+        <p class="product-name">GoPro HERO13 Black - Waterproof Action Camera with 5.3K60 Video, 27MP Photo + Compatibility with HB-Series Lenses</p>
+        <div class="rating">
+          <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+          <span class="review-count">(1.9K)</span>
+        </div>
+        <p class="bought-count">1K+ bought in past month</p>
+        <div class="price">
+          <span class="sale-badge">-23%</span>
+          <span class="current-price"><sup>$</sup>329<sup>99</sup></span>
+        </div>
+        <p class="list-price">List: <span class="strike">$429.99</span></p>
+        <p class="prime-delivery"><span class="prime-badge">&#10003;prime</span> Overnight</p>
+        <p class="delivery-line">FREE delivery <strong>Overnight 4 AM – 8 AM</strong></p>
+        <button class="add-to-cart">Add to cart</button>
+      </div>
+
+      <!-- 8. YAMAHA P71 -->
+      <div class="product-card">
+        <div class="product-img-wrap">
+          <img src="https://m.media-amazon.com/images/I/61+3HkIcX3L._AC_UL320_.jpg" alt="YAMAHA P71" />
+        </div>
+        <p class="product-name">YAMAHA P71 88-Key Weighted Action Digital Piano with Sustain Pedal and Power Supply (Amazon-Exclusive)</p>
+        <div class="rating">
+          <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+          <span class="review-count">(6.5K)</span>
+        </div>
+        <p class="bought-count">1K+ bought in past month</p>
+        <div class="price">
+          <span class="current-price"><sup>$</sup>429<sup>99</sup></span>
+        </div>
+        <p class="prime-delivery"><span class="prime-badge">&#10003;prime</span> Two-Day</p>
+        <p class="delivery-line">FREE delivery <strong>Tue, Mar 10</strong></p>
+        <button class="add-to-cart">Add to cart</button>
+      </div>
+
+      <!-- 9. ASUS ROG Strix G16 -->
+      <div class="product-card">
+        <div class="product-img-wrap">
+          <img src="https://m.media-amazon.com/images/I/81n1T4CYfmL._AC_UL320_.jpg" alt="ASUS ROG Strix G16" />
+        </div>
+        <div class="product-tags">
+          <span class="tag">16 Inches</span>
+          <span class="tag">16 GB</span>
+        </div>
+        <p class="product-name">ASUS ROG Strix G16 (2025) Gaming Laptop, 16" FHD+ 16:10 165Hz/3ms Display, NVIDIA® GeForce RTX™ 5060 Laptop GPU, Intel® Core™ i7 Processor 14650HX, 16GB DDR5, 1TB Gen 4 SSD, Wi-Fi 7, Windows 11 Home</p>
+        <div class="rating">
+          <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+          <span class="review-count">(542)</span>
+        </div>
+        <div class="price">
+          <span class="sale-badge">-7%</span>
+          <span class="current-price"><sup>$</sup>1,399<sup>99</sup></span>
+        </div>
+        <p class="list-price">List: <span class="strike">$1,499.99</span></p>
+        <p class="promo-text">Get 1 Month of Xbox GamePass for new users</p>
+        <p class="prime-delivery"><span class="prime-badge">&#10003;prime</span> Two-Day</p>
+        <p class="delivery-line">FREE delivery <strong>Tue, Mar 10</strong></p>
+        <button class="add-to-cart">Add to cart</button>
+      </div>
+
+      <!-- 10. CYBERPOWERPC Gamer Master -->
+      <div class="product-card">
+        <div class="product-img-wrap">
+          <img src="https://m.media-amazon.com/images/I/71up%2Bhmd7zL._AC_UL320_.jpg" alt="CYBERPOWERPC Gamer Master" />
+        </div>
+        <p class="product-name">CYBERPOWERPC Gamer Master Gaming PC, AMD Ryzen 5 5500 3.6GHz, Radeon RX 6400 4GB, 16GB DDR4, 500GB PCIe Gen4 SSD, WiFi Ready &amp; Windows 11 Home</p>
+        <div class="rating">
+          <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+          <span class="review-count">(1.4K)</span>
+        </div>
+        <div class="price">
+          <span class="current-price"><sup>$</sup>719<sup>99</sup></span>
+        </div>
+        <p class="prime-delivery"><span class="prime-badge">&#10003;prime</span></p>
+        <p class="delivery-line">FREE delivery <strong>Thu, Mar 12</strong></p>
+        <button class="add-to-cart">Add to cart</button>
+      </div>
+
+    </section>
+
+    <!-- ======= SHARE SECTION ======= -->
+    <section class="share-section">
+      <button class="share-page-btn" id="sharePageBtn">&#11014; Share</button>
+      <p>Share this page with your friends.</p>
+    </section>
+
+  </main>
+
+  <!-- ======= FOOTER ======= -->
+  <footer class="footer">
+    <button class="back-to-top" id="backToTop">Back to top</button>
+    <div class="footer-links">
+      <div class="footer-col">
+        <h4>Get to Know Us</h4>
+        <a href="#">Careers</a>
+        <a href="#">Amazon Newsletter</a>
+        <a href="#">About Amazon</a>
+        <a href="#">Accessibility</a>
+        <a href="#">Sustainability</a>
+        <a href="#">Press Center</a>
+        <a href="#">Investor Relations</a>
+        <a href="#">Amazon Devices</a>
+        <a href="#">Amazon Science</a>
+      </div>
+      <div class="footer-col">
+        <h4>Make Money with Us</h4>
+        <a href="#">Sell products on Amazon</a>
+        <a href="#">Sell on Amazon Business</a>
+        <a href="#">Sell apps on Amazon</a>
+        <a href="#">Become an Affiliate</a>
+        <a href="#">Become a Delivery Driver</a>
+        <a href="#">Start a Package Delivery Business</a>
+        <a href="#">Advertise Your Products</a>
+        <a href="#">Self-Publish with Us</a>
+        <a href="#">Become an Amazon Hub Partner</a>
+        <a href="#">&#8250;See More Ways to Make Money</a>
+      </div>
+      <div class="footer-col">
+        <h4>Amazon Payment Products</h4>
+        <a href="#">Amazon Visa</a>
+        <a href="#">Amazon Store Card</a>
+        <a href="#">Amazon Secured Card</a>
+        <a href="#">Amazon Business Card</a>
+        <a href="#">Shop with Points</a>
+        <a href="#">Credit Card Marketplace</a>
+        <a href="#">Reload Your Balance</a>
+        <a href="#">Gift Cards</a>
+        <a href="#">Amazon Currency Converter</a>
+      </div>
+      <div class="footer-col">
+        <h4>Let Us Help You</h4>
+        <a href="#">Your Account</a>
+        <a href="#">Your Orders</a>
+        <a href="#">Shipping Rates &amp; Policies</a>
+        <a href="#">Amazon Prime</a>
+        <a href="#">Returns &amp; Replacements</a>
+        <a href="#">Manage Your Content and Devices</a>
+        <a href="#">Recalls and Product Safety Alerts</a>
+        <a href="#">Registry &amp; Gift List</a>
+        <a href="#">Help</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-logo">your<span>brand</span></div>
+      <div class="footer-locale">
+        <span>&#127760; English</span>
+        <span>&#36; USD</span>
+        <span>&#127482;&#127480; United States</span>
+      </div>
+    </div>
+    <p class="footer-copyright">&#169; 1996–2026, Amazon.com, Inc. or its affiliates</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
