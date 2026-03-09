@@ -90,10 +90,10 @@ document.addEventListener('DOMContentLoaded', () => {
     laptoppro15: {
       name: 'LaptopPro 15',
       scores: [
-        { icon: '🖥️', num: '9.8', name: 'Raw Power',    desc: 'Top 1% benchmark performance across every laptop we have tested.' },
-        { icon: '🔋', num: '9.5', name: 'Endurance',    desc: '14.5 hrs real-world battery — full workday and well beyond.' },
-        { icon: '🏗️', num: '9.4', name: 'Build Quality', desc: 'CNC-milled aluminium chassis with MIL-SPEC drop rating.' },
-        { icon: '🖼️', num: '9.2', name: 'Display',       desc: 'OLED 2.8K 120 Hz panel with 100 % DCI-P3 colour coverage.' },
+        { icon: '🖥️', num: '9.8', name: 'Performance',    desc: 'Top 1% benchmark performance across every laptop we have tested.' },
+        { icon: '🔋', num: '9.5', name: 'Battery Life',    desc: '14.5 hrs real-world battery — full workday and well beyond.' },
+        { icon: '🏗️', num: '9.4', name: 'Portability', desc: 'Calculater based on chassis volume, weight ratio, and charger dimensions.' },
+        { icon: '🖼️', num: '9.2', name: 'Value',       desc: 'Price-to-performance ratio relative to the current high-end laptop market segment' },
       ],
       benchmarks: [
         { cat: 'CPU — Cinebench R23',   result: '18,420 pts', rating: '★★★★★' },
@@ -164,12 +164,14 @@ document.addEventListener('DOMContentLoaded', () => {
     // Product name in header
     document.getElementById('modalProductName').textContent = data.name;
 
-    // Core score cards
+    // Core score cards — icon + name on same row, big score below, description last
     document.getElementById('modalScores').innerHTML = data.scores.map(s => `
       <div class="modal-score-card">
-        <div class="modal-score-icon">${s.icon}</div>
+        <div class="modal-score-header">
+          <span class="modal-score-icon">${s.icon}</span>
+          <span class="modal-score-name">${s.name}</span>
+        </div>
         <div class="modal-score-num">${s.num}</div>
-        <div class="modal-score-name">${s.name}</div>
         <div class="modal-score-desc">${s.desc}</div>
       </div>
     `).join('');
