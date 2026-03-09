@@ -1306,7 +1306,7 @@ img { display: block; max-width: 100%; }
 }
 /* Big orange score below */
 .modal-score-num {
-  font-size: 2.2rem;
+  font-size: 1.5rem;
   font-weight: 900;
   color: var(--orange);
   line-height: 1;

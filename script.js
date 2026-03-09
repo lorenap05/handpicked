@@ -168,10 +168,9 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('modalScores').innerHTML = data.scores.map(s => `
       <div class="modal-score-card">
         <div class="modal-score-header">
-          <span class="modal-score-icon">${s.icon}</span>
-          <span class="modal-score-name">${s.name}</span>
+          <div class="modal-score-num">${s.num}</div>
         </div>
-        <div class="modal-score-num">${s.num}</div>
+        <span class="modal-score-name">${s.name}</span>        
         <div class="modal-score-desc">${s.desc}</div>
       </div>
     `).join('');
