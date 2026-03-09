@@ -1,35 +1,95 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Business Laptops | Handpicked</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <main class="laptop-page">
-    <section class="laptop-hero">
-      <p class="eyebrow">Laptop Category</p>
-      <h1>Business Laptops</h1>
-      <p>Professional-grade laptops with dependable security and productivity tools.</p>
-<<<<<<< ours
-      <a class="laptop-cta" href="https://www.amazon.com/stores/page/C8F85684-CDA0-4C10-AF67-E90138182866?ingress=0&visitId=296fe5a9-d334-42cf-a824-14f75251766a&channel=Hamburger&ref_=nav_em_0_1_1_55" target="_blank" rel="noopener noreferrer">Open Amazon Business Laptops Template</a>
-=======
-      <nav class="laptop-tabs">
-        <a href="laptops.html">All Laptops</a>
-        <a href="home-education.html">Home and Education</a>
-        <a href="gaming-laptops.html">Gaming Laptops</a>
-        <a href="business-laptops.html" class="active">Business Laptops</a>
-        <a href="chromebooks.html">Chromebooks</a>
-      </nav>
-    </section>
-    <section class="laptop-products">
-      <article class="laptop-product-card"><h3>Lenovo ThinkPad X1 Carbon</h3><p>Premium business ultrabook with robust security.</p></article>
-      <article class="laptop-product-card"><h3>Dell XPS 14</h3><p>Portable productivity with a sharp display.</p></article>
-      <article class="laptop-product-card"><h3>HP EliteBook 840</h3><p>Enterprise-ready management and collaboration tools.</p></article>
->>>>>>> theirs
-    </section>
-    <p class="laptop-back"><a href="laptops.html">&larr; Back to Laptops</a></p>
-  </main>
-</body>
-</html>
+diff --git a/business-laptops.html b/business-laptops.html
+new file mode 100644
+index 0000000000000000000000000000000000000000..a55a091ffbf7e79243775d269b172901286fa4e7
+--- /dev/null
++++ b/business-laptops.html
+@@ -0,0 +1,89 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++  <meta charset="UTF-8" />
++  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
++  <title>Business Laptops | Handpicked</title>
++  <link rel="stylesheet" href="style.css" />
++</head>
++<body class="business-page">
++  <header class="top-nav">
++    <div class="nav-logo">
++      <span class="logo-text">your<span class="logo-accent">brand</span></span>
++    </div>
++    <div class="nav-search">
++      <select class="search-category"><option>All</option></select>
++      <input type="text" placeholder="Search Amazon" class="search-input" />
++      <button class="search-btn" aria-label="Search">&#128269;</button>
++    </div>
++    <div class="nav-actions">
++      <div class="nav-action">
++        <span class="nav-action-top">Hello, User</span>
++        <span class="nav-action-bot">Account &amp; Lists &#9660;</span>
++      </div>
++      <div class="nav-action">
++        <span class="nav-action-top">Returns</span>
++        <span class="nav-action-bot">&amp; Orders</span>
++      </div>
++      <div class="nav-action cart-btn">
++        <span class="cart-count">0</span>
++        <span class="nav-action-bot">Cart</span>
++      </div>
++    </div>
++  </header>
++
++  <nav class="category-nav">
++    <span class="all-btn">&#9776; All</span>
++    <span>Same-Day Delivery</span>
++    <span>Amazon Haul</span>
++    <span>Medical Care</span>
++    <span>Amazon Basics</span>
++    <span>Best Sellers</span>
++    <span>Prime Video</span>
++    <span>Buy Again</span>
++    <span>Audible</span>
++    <span>Pet Supplies</span>
++  </nav>
++
++  <main>
++    <div class="business-gap"></div>
++
++    <section class="business-hero">
++      <div class="business-hero-left">
++        <h1>Business Laptops</h1>
++        <p>Professional performance, portability, and reliability.</p>
++      </div>
++      <div class="business-hero-right">
++        <img src="https://m.media-amazon.com/images/I/71gB5R4v4CL._AC_SL1500_.jpg" alt="Business Laptops" />
++      </div>
++    </section>
++
++    <nav class="sub-nav" id="subNav">
++      <span class="store-label">Handpicked</span>
++      <button class="share-btn" id="shareBtn" title="Share">&#11014;</button>
++      <a href="index.html">HOME</a>
++      <a href="#">FAQ</a>
++      <a href="#">DEALS</a>
++      <a href="laptops.html" class="has-dropdown active">LAPTOPS
++        <div class="dropdown-menu">
++          <a href="home-education.html">Home and Education</a>
++          <a href="gaming-laptops.html">Gaming Laptops</a>
++          <a href="business-laptops.html">Business Laptops</a>
++          <a href="chromebooks.html">Chromebooks</a>
++        </div>
++      </a>
++      <a href="#">GAMING</a>
++      <a href="#">HEADPHONES</a>
++      <a href="#">PHONES</a>
++    </nav>
++
++    <section class="business-showcase">
++      <article class="business-feature-card">
++        <img src="https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/d42173a9-bc8e-49da-b429-003c0899435e._CR0%2C0%2C1500%2C1500_SX375_SY375_.jpg" alt="Business monitor" />
++      </article>
++    </section>
++  </main>
++
++  <script src="script.js"></script>
++</body>
++</html>
