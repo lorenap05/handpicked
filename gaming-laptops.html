@@ -7,29 +7,203 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <main class="laptop-page">
-    <section class="laptop-hero">
-      <p class="eyebrow">Laptop Category</p>
+
+  <!-- ======= TOP NAVBAR ======= -->
+  <header class="top-nav">
+    <div class="nav-logo">
+      <span class="logo-accent">Amazon</span>
+    </div>
+    <div class="nav-search">
+      <select class="search-category"><option>All</option></select>
+      <input type="text" placeholder="Search Amazon" class="search-input" />
+      <button class="search-btn" aria-label="Search">&#128269;</button>
+    </div>
+    <div class="nav-actions">
+      <div class="nav-action">
+        <span class="nav-action-top">Hello, User</span>
+        <span class="nav-action-bot">Account &amp; Lists &#9660;</span>
+      </div>
+      <div class="nav-action">
+        <span class="nav-action-top">Returns</span>
+        <span class="nav-action-bot">&amp; Orders</span>
+      </div>
+      <div class="nav-action cart-btn">
+        <span class="cart-count">0</span>
+        <span class="nav-action-bot">Cart</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ======= CATEGORY NAV BAR ======= -->
+  <nav class="category-nav">
+    <span class="all-btn">&#9776; All</span>
+    <span>Same-Day Delivery</span>
+    <span>Amazon Haul</span>
+    <span>Medical Care</span>
+    <span>Amazon Basics</span>
+    <span>Best Sellers</span>
+    <span>Prime Video</span>
+    <span>Buy Again</span>
+    <span>Audible</span>
+    <span>Pet Supplies</span>
+    <span>Beauty &amp; Personal Care</span>
+    <span>Browsing History</span>
+    <span>Handmade</span>
+  </nav>
+
+  <main>
+
+    <!-- ======= HERO ======= -->
+    <section class="hero">
+      <div>
+        <img
+          src="https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/80dc6d0a-b75c-4498-ae9b-179969f41a3a._CR0%2C23%2C3000%2C600_SX3000_.png"
+          alt="Handpicked hero" />
+      </div>
+    </section>
+
+    <!-- ======= BREADCRUMB ======= -->
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="index.html">Handpicked</a>
+      <span>&#8250;</span>
+      <a href="laptops.html">Laptops</a>
+      <span>&#8250;</span>
+      <span>Gaming Laptops</span>
+    </nav>
+
+    <!-- ======= STICKY SUB-NAV ======= -->
+    <nav class="sub-nav" id="subNav">
+      <span class="store-label">Handpicked</span>
+      <button class="share-btn" id="shareBtn" title="Share">&#11014;</button>
+      <a href="index.html">HOME</a>
+      <a href="#">FAQ</a>
+      <a href="#">DEALS</a>
+      <a href="laptops.html" class="active has-dropdown">LAPTOPS &#9660;
+        <div class="dropdown-menu">
+          <a href="home-education.html">Home and Education</a>
+          <a href="gaming-laptops.html">Gaming Laptops</a>
+          <a href="business-laptops.html">Business Laptops</a>
+          <a href="chromebooks.html">Chromebooks</a>
+        </div>
+      </a>
+      <a href="#" class="has-dropdown">DESKTOPS &#9660;
+        <div class="dropdown-menu">
+          <a href="#">Gaming PCs</a>
+          <a href="#">All-in-Ones</a>
+          <a href="#">Mini PCs</a>
+        </div>
+      </a>
+      <a href="#" class="has-dropdown">MONITORS &#9660;
+        <div class="dropdown-menu">
+          <a href="#">Gaming Monitors</a>
+          <a href="#">4K Monitors</a>
+          <a href="#">Ultrawide</a>
+        </div>
+      </a>
+      <a href="#" class="has-dropdown">TELEVISIONS &#9660;
+        <div class="dropdown-menu">
+          <a href="#">OLED TVs</a>
+          <a href="#">4K TVs</a>
+          <a href="#">Smart TVs</a>
+          <a href="#">Budget TVs</a>
+        </div>
+      </a>
+      <a href="#">GAMING</a>
+      <a href="#">HEADPHONES</a>
+      <a href="#">PHONES</a>
+      <a href="#">WEARABLES</a>
+      <a href="#">ESPRESSO MACHINES</a>
+      <a href="#" class="has-dropdown">MORE &#9660;
+        <div class="dropdown-menu">
+          <a href="#">Playsets</a>
+          <a href="#">Air Fryers</a>
+          <a href="#">Speakers</a>
+          <a href="#">Cameras</a>
+          <a href="#">Soundbars</a>
+          <a href="#">Printers</a>
+          <a href="#">Scanners</a>
+          <a href="#">Projectors</a>
+          <a href="#">Guitars</a>
+          <a href="#">Keyboards &amp; Pianos</a>
+          <a href="#">Microphones</a>
+          <a href="#">Vacuums</a>
+        </div>
+      </a>
+    </nav>
+
+    <!-- ======= PAGE HEADING ======= -->
+    <div class="page-heading">
       <h1>Gaming Laptops</h1>
-      <p>Discover high-refresh, GPU-driven systems designed for immersive gameplay.</p>
-<<<<<<< ours
-      <a class="laptop-cta" href="https://www.amazon.com/stores/page/52B08B0C-732E-4144-84D8-5C0B519280C6?ingress=0&visitId=296fe5a9-d334-42cf-a824-14f75251766a&channel=Hamburger&ref_=nav_em_0_1_1_55" target="_blank" rel="noopener noreferrer">Open Amazon Gaming Laptops Template</a>
-=======
-      <nav class="laptop-tabs">
-        <a href="laptops.html">All Laptops</a>
-        <a href="home-education.html">Home and Education</a>
-        <a href="gaming-laptops.html" class="active">Gaming Laptops</a>
-        <a href="business-laptops.html">Business Laptops</a>
-        <a href="chromebooks.html">Chromebooks</a>
-      </nav>
+      <p>Powerful laptops with fast processing speed</p>
+    </div>
+
+    <!-- ======= PLACEHOLDER — content coming soon ======= -->
+    <div class="coming-soon-block">
+      <p>Content for this section is coming soon. Check back later.</p>
+      <a href="laptops.html">&#8592; Back to Laptops</a>
+    </div>
+
+    <!-- ======= SHARE SECTION ======= -->
+    <section class="share-section">
+      <button class="share-page-btn" id="sharePageBtn">&#11014; Share</button>
+      <p>Share this page with your friends.</p>
     </section>
-    <section class="laptop-products">
-      <article class="laptop-product-card"><h3>ASUS ROG Strix G16</h3><p>RTX graphics and fast 240Hz display.</p></article>
-      <article class="laptop-product-card"><h3>MSI Raider GE78</h3><p>Desktop-level performance in laptop form.</p></article>
-      <article class="laptop-product-card"><h3>Alienware m18</h3><p>Powerful cooling and high-end gaming specs.</p></article>
->>>>>>> theirs
-    </section>
-    <p class="laptop-back"><a href="laptops.html">&larr; Back to Laptops</a></p>
+
   </main>
+
+  <!-- ======= FOOTER ======= -->
+  <footer class="footer">
+    <button class="back-to-top" id="backToTop">Back to top</button>
+    <div class="footer-links">
+      <div class="footer-col">
+        <h4>Get to Know Us</h4>
+        <a href="#">Careers</a>
+        <a href="#">Amazon Newsletter</a>
+        <a href="#">About Amazon</a>
+        <a href="#">Accessibility</a>
+        <a href="#">Sustainability</a>
+        <a href="#">Press Center</a>
+        <a href="#">Investor Relations</a>
+        <a href="#">Amazon Devices</a>
+        <a href="#">Amazon Science</a>
+      </div>
+      <div class="footer-col">
+        <h4>Make Money with Us</h4>
+        <a href="#">Sell products on Amazon</a>
+        <a href="#">Sell apps on Amazon</a>
+        <a href="#">Become an Affiliate</a>
+        <a href="#">Advertise Your Products</a>
+        <a href="#">Self-Publish with Us</a>
+        <a href="#">&#8250; See More Ways to Make Money</a>
+      </div>
+      <div class="footer-col">
+        <h4>Amazon Payment Products</h4>
+        <a href="#">Amazon Visa</a>
+        <a href="#">Amazon Store Card</a>
+        <a href="#">Shop with Points</a>
+        <a href="#">Gift Cards</a>
+        <a href="#">Amazon Currency Converter</a>
+      </div>
+      <div class="footer-col">
+        <h4>Let Us Help You</h4>
+        <a href="#">Your Account</a>
+        <a href="#">Your Orders</a>
+        <a href="#">Amazon Prime</a>
+        <a href="#">Returns &amp; Replacements</a>
+        <a href="#">Help</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-logo">your<span>brand</span></div>
+      <div class="footer-locale">
+        <span>&#127760; English</span>
+        <span>&#36; USD</span>
+        <span>&#127482;&#127480; United States</span>
+      </div>
+    </div>
+    <p class="footer-copyright">&#169; 1996–2026, Amazon.com, Inc. or its affiliates</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

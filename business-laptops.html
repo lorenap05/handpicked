@@ -1,95 +1,209 @@
-diff --git a/business-laptops.html b/business-laptops.html
-new file mode 100644
-index 0000000000000000000000000000000000000000..a55a091ffbf7e79243775d269b172901286fa4e7
---- /dev/null
-+++ b/business-laptops.html
-@@ -0,0 +1,89 @@
-+<!DOCTYPE html>
-+<html lang="en">
-+<head>
-+  <meta charset="UTF-8" />
-+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-+  <title>Business Laptops | Handpicked</title>
-+  <link rel="stylesheet" href="style.css" />
-+</head>
-+<body class="business-page">
-+  <header class="top-nav">
-+    <div class="nav-logo">
-+      <span class="logo-text">your<span class="logo-accent">brand</span></span>
-+    </div>
-+    <div class="nav-search">
-+      <select class="search-category"><option>All</option></select>
-+      <input type="text" placeholder="Search Amazon" class="search-input" />
-+      <button class="search-btn" aria-label="Search">&#128269;</button>
-+    </div>
-+    <div class="nav-actions">
-+      <div class="nav-action">
-+        <span class="nav-action-top">Hello, User</span>
-+        <span class="nav-action-bot">Account &amp; Lists &#9660;</span>
-+      </div>
-+      <div class="nav-action">
-+        <span class="nav-action-top">Returns</span>
-+        <span class="nav-action-bot">&amp; Orders</span>
-+      </div>
-+      <div class="nav-action cart-btn">
-+        <span class="cart-count">0</span>
-+        <span class="nav-action-bot">Cart</span>
-+      </div>
-+    </div>
-+  </header>
-+
-+  <nav class="category-nav">
-+    <span class="all-btn">&#9776; All</span>
-+    <span>Same-Day Delivery</span>
-+    <span>Amazon Haul</span>
-+    <span>Medical Care</span>
-+    <span>Amazon Basics</span>
-+    <span>Best Sellers</span>
-+    <span>Prime Video</span>
-+    <span>Buy Again</span>
-+    <span>Audible</span>
-+    <span>Pet Supplies</span>
-+  </nav>
-+
-+  <main>
-+    <div class="business-gap"></div>
-+
-+    <section class="business-hero">
-+      <div class="business-hero-left">
-+        <h1>Business Laptops</h1>
-+        <p>Professional performance, portability, and reliability.</p>
-+      </div>
-+      <div class="business-hero-right">
-+        <img src="https://m.media-amazon.com/images/I/71gB5R4v4CL._AC_SL1500_.jpg" alt="Business Laptops" />
-+      </div>
-+    </section>
-+
-+    <nav class="sub-nav" id="subNav">
-+      <span class="store-label">Handpicked</span>
-+      <button class="share-btn" id="shareBtn" title="Share">&#11014;</button>
-+      <a href="index.html">HOME</a>
-+      <a href="#">FAQ</a>
-+      <a href="#">DEALS</a>
-+      <a href="laptops.html" class="has-dropdown active">LAPTOPS
-+        <div class="dropdown-menu">
-+          <a href="home-education.html">Home and Education</a>
-+          <a href="gaming-laptops.html">Gaming Laptops</a>
-+          <a href="business-laptops.html">Business Laptops</a>
-+          <a href="chromebooks.html">Chromebooks</a>
-+        </div>
-+      </a>
-+      <a href="#">GAMING</a>
-+      <a href="#">HEADPHONES</a>
-+      <a href="#">PHONES</a>
-+    </nav>
-+
-+    <section class="business-showcase">
-+      <article class="business-feature-card">
-+        <img src="https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/d42173a9-bc8e-49da-b429-003c0899435e._CR0%2C0%2C1500%2C1500_SX375_SY375_.jpg" alt="Business monitor" />
-+      </article>
-+    </section>
-+  </main>
-+
-+  <script src="script.js"></script>
-+</body>
-+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Business Laptops | Handpicked</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ======= TOP NAVBAR ======= -->
+  <header class="top-nav">
+    <div class="nav-logo">
+      <span class="logo-accent">Amazon</span>
+    </div>
+    <div class="nav-search">
+      <select class="search-category"><option>All</option></select>
+      <input type="text" placeholder="Search Amazon" class="search-input" />
+      <button class="search-btn" aria-label="Search">&#128269;</button>
+    </div>
+    <div class="nav-actions">
+      <div class="nav-action">
+        <span class="nav-action-top">Hello, User</span>
+        <span class="nav-action-bot">Account &amp; Lists &#9660;</span>
+      </div>
+      <div class="nav-action">
+        <span class="nav-action-top">Returns</span>
+        <span class="nav-action-bot">&amp; Orders</span>
+      </div>
+      <div class="nav-action cart-btn">
+        <span class="cart-count">0</span>
+        <span class="nav-action-bot">Cart</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ======= CATEGORY NAV BAR ======= -->
+  <nav class="category-nav">
+    <span class="all-btn">&#9776; All</span>
+    <span>Same-Day Delivery</span>
+    <span>Amazon Haul</span>
+    <span>Medical Care</span>
+    <span>Amazon Basics</span>
+    <span>Best Sellers</span>
+    <span>Prime Video</span>
+    <span>Buy Again</span>
+    <span>Audible</span>
+    <span>Pet Supplies</span>
+    <span>Beauty &amp; Personal Care</span>
+    <span>Browsing History</span>
+    <span>Handmade</span>
+  </nav>
+
+  <main>
+
+    <!-- ======= HERO ======= -->
+    <section class="hero">
+      <div>
+        <img
+          src="https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/80dc6d0a-b75c-4498-ae9b-179969f41a3a._CR0%2C23%2C3000%2C600_SX3000_.png"
+          alt="Handpicked hero" />
+      </div>
+    </section>
+
+    <!-- ======= BREADCRUMB ======= -->
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="index.html">Handpicked</a>
+      <span>&#8250;</span>
+      <a href="laptops.html">Laptops</a>
+      <span>&#8250;</span>
+      <span>Business Laptops</span>
+    </nav>
+
+    <!-- ======= STICKY SUB-NAV ======= -->
+    <nav class="sub-nav" id="subNav">
+      <span class="store-label">Handpicked</span>
+      <button class="share-btn" id="shareBtn" title="Share">&#11014;</button>
+      <a href="index.html">HOME</a>
+      <a href="#">FAQ</a>
+      <a href="#">DEALS</a>
+      <a href="laptops.html" class="active has-dropdown">LAPTOPS &#9660;
+        <div class="dropdown-menu">
+          <a href="home-education.html">Home and Education</a>
+          <a href="gaming-laptops.html">Gaming Laptops</a>
+          <a href="business-laptops.html">Business Laptops</a>
+          <a href="chromebooks.html">Chromebooks</a>
+        </div>
+      </a>
+      <a href="#" class="has-dropdown">DESKTOPS &#9660;
+        <div class="dropdown-menu">
+          <a href="#">Gaming PCs</a>
+          <a href="#">All-in-Ones</a>
+          <a href="#">Mini PCs</a>
+        </div>
+      </a>
+      <a href="#" class="has-dropdown">MONITORS &#9660;
+        <div class="dropdown-menu">
+          <a href="#">Gaming Monitors</a>
+          <a href="#">4K Monitors</a>
+          <a href="#">Ultrawide</a>
+        </div>
+      </a>
+      <a href="#" class="has-dropdown">TELEVISIONS &#9660;
+        <div class="dropdown-menu">
+          <a href="#">OLED TVs</a>
+          <a href="#">4K TVs</a>
+          <a href="#">Smart TVs</a>
+          <a href="#">Budget TVs</a>
+        </div>
+      </a>
+      <a href="#">GAMING</a>
+      <a href="#">HEADPHONES</a>
+      <a href="#">PHONES</a>
+      <a href="#">WEARABLES</a>
+      <a href="#">ESPRESSO MACHINES</a>
+      <a href="#" class="has-dropdown">MORE &#9660;
+        <div class="dropdown-menu">
+          <a href="#">Playsets</a>
+          <a href="#">Air Fryers</a>
+          <a href="#">Speakers</a>
+          <a href="#">Cameras</a>
+          <a href="#">Soundbars</a>
+          <a href="#">Printers</a>
+          <a href="#">Scanners</a>
+          <a href="#">Projectors</a>
+          <a href="#">Guitars</a>
+          <a href="#">Keyboards &amp; Pianos</a>
+          <a href="#">Microphones</a>
+          <a href="#">Vacuums</a>
+        </div>
+      </a>
+    </nav>
+
+    <!-- ======= PAGE HEADING ======= -->
+    <div class="page-heading">
+      <h1>Business Laptops</h1>
+      <p>Laptops with enhanced battery life for ultimate productivity</p>
+    </div>
+
+    <!-- ======= PLACEHOLDER — content coming soon ======= -->
+    <div class="coming-soon-block">
+      <p>Content for this section is coming soon. Check back later.</p>
+      <a href="laptops.html">&#8592; Back to Laptops</a>
+    </div>
+
+    <!-- ======= SHARE SECTION ======= -->
+    <section class="share-section">
+      <button class="share-page-btn" id="sharePageBtn">&#11014; Share</button>
+      <p>Share this page with your friends.</p>
+    </section>
+
+  </main>
+
+  <!-- ======= FOOTER ======= -->
+  <footer class="footer">
+    <button class="back-to-top" id="backToTop">Back to top</button>
+    <div class="footer-links">
+      <div class="footer-col">
+        <h4>Get to Know Us</h4>
+        <a href="#">Careers</a>
+        <a href="#">Amazon Newsletter</a>
+        <a href="#">About Amazon</a>
+        <a href="#">Accessibility</a>
+        <a href="#">Sustainability</a>
+        <a href="#">Press Center</a>
+        <a href="#">Investor Relations</a>
+        <a href="#">Amazon Devices</a>
+        <a href="#">Amazon Science</a>
+      </div>
+      <div class="footer-col">
+        <h4>Make Money with Us</h4>
+        <a href="#">Sell products on Amazon</a>
+        <a href="#">Sell apps on Amazon</a>
+        <a href="#">Become an Affiliate</a>
+        <a href="#">Advertise Your Products</a>
+        <a href="#">Self-Publish with Us</a>
+        <a href="#">&#8250; See More Ways to Make Money</a>
+      </div>
+      <div class="footer-col">
+        <h4>Amazon Payment Products</h4>
+        <a href="#">Amazon Visa</a>
+        <a href="#">Amazon Store Card</a>
+        <a href="#">Shop with Points</a>
+        <a href="#">Gift Cards</a>
+        <a href="#">Amazon Currency Converter</a>
+      </div>
+      <div class="footer-col">
+        <h4>Let Us Help You</h4>
+        <a href="#">Your Account</a>
+        <a href="#">Your Orders</a>
+        <a href="#">Amazon Prime</a>
+        <a href="#">Returns &amp; Replacements</a>
+        <a href="#">Help</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-logo">your<span>brand</span></div>
+      <div class="footer-locale">
+        <span>&#127760; English</span>
+        <span>&#36; USD</span>
+        <span>&#127482;&#127480; United States</span>
+      </div>
+    </div>
+    <p class="footer-copyright">&#169; 1996–2026, Amazon.com, Inc. or its affiliates</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
